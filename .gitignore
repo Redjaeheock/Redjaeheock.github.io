@@ -28,4 +28,5 @@ assets/js/dist
 
 #ignore obsidian
 #obsidian
+obsidian/.obsidian
 start-obsidian.sh

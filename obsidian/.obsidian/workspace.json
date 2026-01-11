@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xpxpasdf.md",
+                "file": "database with 아답터/아답터 1강..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xpxpasdf"
+              "title": "아답터 1강."
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "2강"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,11 +183,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ac03a74891fbcb30",
+  "active": "c5833be621655f98",
   "lastOpenFiles": [
-    "database with 아답터/1강.md",
-    "열혈프로그래밍 C++/윤성우의 열혈 C++ chpt.14.md",
+    "빅데이터 분석기사 with 아답터",
     "database with 아답터/2강.md",
+    "database with 아답터/아답터 1강..md",
+    "열혈프로그래밍 C++/윤성우의 열혈 C++ chpt.14.md",
     "database with 아답터",
     "transformer 아키텍처.md",
     "42GyeongSan/inner5/Webserv/image/Pasted image 20251127100334.png",

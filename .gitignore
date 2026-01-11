@@ -27,5 +27,5 @@ _sass/vendors
 assets/js/dist
 
 #ignore obsidian
-obsidian
+#obsidian
 start-obsidian.sh

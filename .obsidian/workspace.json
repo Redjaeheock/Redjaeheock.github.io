@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "e234cdc751a473c6",
+    "id": "a6001eb87e05a7f0",
     "type": "split",
     "children": [
       {
-        "id": "12b3d011bf9f4593",
+        "id": "ff514b3a6ca27a81",
         "type": "tabs",
         "children": [
           {
-            "id": "941f76475b490ced",
+            "id": "7dc8fd34af5aba59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xpxpasdf.md",
+                "file": "obsidian/xpxpasdf.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d209bbcb5a1123ac",
+    "id": "976b41da9bf4a0d4",
     "type": "split",
     "children": [
       {
-        "id": "1b20460cce8c335d",
+        "id": "d77e3f935389e9fa",
         "type": "tabs",
         "children": [
           {
-            "id": "c5833be621655f98",
+            "id": "e6468dd38aa62217",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +48,12 @@
             }
           },
           {
-            "id": "b284772a82a72ff1",
+            "id": "2b043100602e3d15",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#include",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,41 +61,40 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
-            "id": "f16031d4177ad52b",
+            "id": "0cad10c5aca80b54",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "북마크"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 300
   },
   "right": {
-    "id": "c9cfd3f56144d941",
+    "id": "216ab6251ff26ff7",
     "type": "split",
     "children": [
       {
-        "id": "5707055c3e9464cc",
+        "id": "508c67887b108774",
         "type": "tabs",
         "children": [
           {
-            "id": "b9e2e37d28977f97",
+            "id": "33f0a34e4c6343f3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "알고리즘 - 1.md",
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,25 +103,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "알고리즘 - 1 의 백링크"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "d824a001fe6906cb",
+            "id": "6745830cab653374",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BitNet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "BitNet 의 나가는 링크"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "4a9caf066f911e86",
+            "id": "ba1c58c461039806",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,29 +131,42 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "태그"
+              "title": "Tags"
             }
           },
           {
-            "id": "21059754482769f7",
+            "id": "aaa976eb3343df6c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "dfd6ac7da7d2fab9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "BitNet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BitNet 의 개요"
+              "title": "Outline"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -169,53 +180,8 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "941f76475b490ced",
+  "active": "7dc8fd34af5aba59",
   "lastOpenFiles": [
-    "열혈프로그래밍 C++/윤성우의 열혈 C++ chpt.14.md",
-    "xpxpasdf.md",
-    "transformer 아키텍처.md",
-    "42GyeongSan/inner5/Webserv/image/Pasted image 20251127100334.png",
-    "42GyeongSan/inner5/Webserv/image",
-    "열혈프로그래밍 C++/image/Pasted image 20250910194002.png",
-    "열혈프로그래밍 C++/image/Pasted image 20250909122052.png",
-    "열혈프로그래밍 C++/image/Pasted image 20250909120135.png",
-    "열혈프로그래밍 C++/image/Pasted image 20250909115918.png",
-    "열혈프로그래밍 C++/image",
-    "열혈프로그래밍 C++/image/Pasted image 20250909140430.png",
-    "42GyeongSan/inner5/Webserv/image/Pasted image 20251224082756.png",
-    "CashCowProject/Task/CLIP/Model test.md",
-    "CashCowProject/Task/CLIP/CLIP paper translation(with chatGPT5).md",
-    "CashCowProject/Task/BitNet/BitNet.md",
-    "CashCowProject/Task/BitNet/BitNet2.md",
-    "CashCowProject/회의록/일정 2025-08-12.md",
-    "CashCowProject/회의록/업무 분배 정리 2025-09-16.md",
-    "CashCowProject/CashCow_FlowChart.svg",
-    "CashCowProject/Task/xptmxm.md",
-    "CashCowProject/CashCow 흐름도.drawio",
-    "42GyeongSan/inner5/Webserv/1. Webserv PDF translation.md",
-    "42GyeongSan/inner5/Webserv/2. RFC.md",
-    "CashCowProject/Task/CLIP",
-    "CashCowProject/Plan/Model Search Plan(with ChatGPT).md",
-    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Pasted image 20251117224542.png",
-    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Pasted image 20251117223311.png",
-    "NeXt-TDNN/논문해석.md",
-    "NeXt-TDNN/ConvNet - 합성곱 신경망(CNN).md",
-    "NeXt-TDNN/main.py.md",
-    "Toast/Toast Menual.md",
-    "42GyeongSan/inner5/Webserv",
-    "42GyeongSan/inner5/무제",
-    "42GyeongSan/inner6",
-    "42GyeongSan/inner5",
-    "42GyeongSan/inner4",
-    "42GyeongSan/inner3",
-    "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/Phi-4-multimodal run test.md",
-    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Qwen2-VL-2B run test.md",
-    "CashCowProject/Task/Multi-modal/Test_model.md",
-    "z_융합단 교육/2025.10.30 ~ 31 기술 교육.md",
-    "무제.md",
-    "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/Phi-4-multimodal.md",
-    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Qwen2-VL-2B.md",
-    "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/LoRA.md",
-    "CashCowProject/Task/Sora3/Sora3.md"
+    "README.md"
   ]
 }

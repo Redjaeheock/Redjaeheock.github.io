@@ -1,20 +1,72 @@
 https://github.com/openai/CLIP
 
-## Usage
+### GPU cuda 설정
 
-First, [install PyTorch 1.7.1](https://pytorch.org/get-started/locally/) (or later) and torchvision, as well as small additional dependencies, and then install this repo as a Python package. On a CUDA GPU machine, the following will do the trick
+![[스크린샷 2026-01-11 202214.png]]
 
+cuda 13.1 확인
+
+cuda-toolkit 을 설치하려고 했는데, 
+
+최근들어 torch 에서 cuda tooklit 을 지원하기 때문에 설치할 필요가 없다고 한다.
+
+nvcc 나 직접 cuda code 를 작성하는 작업이 아닌 이상 이젠 필수 요소가 아니라고 하니 넘어가 본다.
+
+---
+
+그럼 가장 기본으로 python 3.10 을 설치해보고자 했더니,
+
+![[스크린샷 2026-01-11 214558.png]]
+
+설치가 되지 않는다. 
+
+
+알아본 바 Ubuntu24.04 부턴 python3.12 를 지원하기 때문에 3.10 설치를 하려면 pyenv 등을 통해 설정해댜 된다.
+(3.10 이 제일 무난한데... 어쩔 수 없이 3.12 기반으로 진행해본다.)
+
+![[스크린샷 2026-01-11 215140.png]]
 ```
-$ conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
-$ pip install ftfy regex tqdm
-$ pip install git+https://github.com/openai/CLIP.git
+python3.12-venv:
+  - 가상환경(venv) 모듈
+  - 없으면 "No module named venv" 에러
+  - Windows/macOS와 달리 Ubuntu는 별도 패키지
+
+python3.12-dev:
+  - Python.h 등 C 헤더 파일
+  - NumPy, Pillow, PyTorch 등 C extension 컴파일 시 필요
+  - 없으면 "Python.h: No such file or directory" 에러
+
+python3-pip:
+  - pip 패키지 관리자
+  - 일반적으로 이미 설치되어 있음
+
+build-essential:
+  - gcc, g++, make 등 컴파일 도구
+  - C/C++ 코드 빌드 시 필요
+  - 대부분 ML 라이브
 ```
+---
 
-여느 모델 처럼 python 3.10 버전을 기준으로 설치하려다 버전 충돌이 발생했다
-![[Pasted image 20251224082756.png]]
-아무래도 CLIP 은 2025 기준 python 3.10 버전 지원은 안되는 것 같다
+설치했으니, 이젠 가상환경을 생성해보자
 
+![[스크린샷 2026-01-11 215915.png]]
 
+---
 
-Replace `cudatoolkit=11.0` above with the appropriate CUDA version on your machine or `cpuonly` when installing on a machine without a GPU.
+가상환경을 가볍게 생성했으니, 이젠 pytorch 를 설치해보자
+
+우선 설치 라이브러리 관련 업데이트부터 해준 뒤
+
+![[스크린샷 2026-01-11 220631.png]]
+
+로컬은 cuda 3.1 을 지원하지만
+
+pytorch 에선 3.0 까지 지원하기 때문에, 3.0 에 맞춰서 pytorch 를 설치
+![[스크린샷 2026-01-11 221647.png]]
+
+설치 확인
+![[스크린샷 2026-01-11 221953.png]]
+
+---
+
 

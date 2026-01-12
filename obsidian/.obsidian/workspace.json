@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "빅데이터 분석기사 필기 with 아답터/1과목.md",
+                "file": "CashCowProject/Task/CLIP/Model test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1과목"
+              "title": "Model test"
             }
           }
         ],
@@ -186,16 +186,20 @@
   },
   "active": "2d6ab20987b22c2f",
   "lastOpenFiles": [
-    "CashCowProject/Task/CLIP/Model test.md",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 200304.png",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 193813.png",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 193404.png",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 192339.png",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 192059.png",
+    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-12 185027.png",
     "빅데이터 분석기사 필기 with 아답터/1과목.md",
+    "CashCowProject/Task/CLIP/Model test.md",
     "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 221953.png",
     "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 221647.png",
     "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 220631.png",
     "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 215915.png",
     "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 215140.png",
     "CashCowProject/Task/CLIP/CLIP paper translation(with chatGPT5).md",
-    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 214558.png",
-    "CashCowProject/Task/CLIP/image/스크린샷 2026-01-11 202214.png",
     "CashCowProject/Task/CLIP/image",
     "database with 아답터/아답터 1강..md",
     "빅데이터 분석기사 필기 with 아답터",
@@ -203,10 +207,7 @@
     "열혈프로그래밍 C++/윤성우의 열혈 C++ chpt.14.md",
     "database with 아답터",
     "transformer 아키텍처.md",
-    "42GyeongSan/inner5/Webserv/image/Pasted image 20251127100334.png",
     "42GyeongSan/inner5/Webserv/image",
-    "열혈프로그래밍 C++/image/Pasted image 20250910194002.png",
-    "열혈프로그래밍 C++/image/Pasted image 20250909122052.png",
     "열혈프로그래밍 C++/image",
     "CashCowProject/Task/BitNet/BitNet.md",
     "CashCowProject/Task/BitNet/BitNet2.md",
@@ -230,7 +231,6 @@
     "CashCowProject/Task/Multi-modal/Test_model.md",
     "z_융합단 교육/2025.10.30 ~ 31 기술 교육.md",
     "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/Phi-4-multimodal.md",
-    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Qwen2-VL-2B.md",
-    "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/LoRA.md"
+    "CashCowProject/Task/Vision-model/Qwen2-VL-2B/Qwen2-VL-2B.md"
   ]
 }

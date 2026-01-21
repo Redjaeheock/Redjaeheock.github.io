@@ -363,7 +363,7 @@ int a = 1;
 C++ 자체에선 **후위 증가 연산의 연속 사용을 허용 하지 않기 때문**에, 
 룰을 적용하기 위한 장치로 const 객체를 사용
 
-전위 증가 연산의 경우 C 에선 연산이 적용이 안되지만
+__전위 증가 연산__ 의 경우 C 에선 연산이 적용이 안되지만
 C++ 에선 객체의 참조 반환을 통해 이뤄지기 때문에 사용 가능함
 
 **lvalue**: `“주소가 있는(메모리 위치를 가리키는) 표현식”.
@@ -374,3 +374,258 @@ C++ 에선 객체의 참조 반환을 통해 이뤄지기 때문에 사용 가�
 
 ![[Pasted image 20250910194002.png]]
 
+---
+## 교환법칙 문제의 해결
+
+- 연산자는 교환법칙이 성립한다
+
+```c++
+class Point
+{
+private:
+	int xpos, ypos;
+public:
+	Point(int x=0, y=0) : xpos(x), ypox(y)
+	{}
+	void ShowPosition() const
+	{
+		cout << '[' << xpos << ", " << ypos << ']' << endl;
+	}
+	Point operator*(int times)
+	{
+		Point pos(xpos*times, ypos*times);
+		return pos;
+	}
+};
+
+int main()
+{
+	Point pos(1, 2);
+	Point cpy;
+	
+	cpy = pos * 3;
+	cpy.ShowPosition();
+	
+	cpy = pos * 3 * 2;
+	cpy.ShowPosition();
+	
+	return 0;
+}
+```
+
+pos 와 cpy 가 point 객체라 할 때 다음 두 연산은 모두 허용이 되어아 하며, 그 결과도 같아야 한다.
+
+- cpy = pos * 3
+- cpy = 3 * pos
+
+
+하지만 두 번째 식에서 rvalue 인 3 은 operator 를 호출할 수 없고, 
+따라오느 pos 또한 **클래스 내부에서 오버로딩 된 곱셉 연산자** 로는 3을 전달할 방법이 없다
+
+
+우린 이 두 가지가 다 가능하게 구현하게 하려면 결국은 아래의 코드와 같이
+**연산자 오버로딩을 전역 함수로 선언** 할 수 밖에 없다
+
+```c++
+class Point
+{
+private:
+	int xpos, ypos;
+public:
+	Point(int x=0, y=0) : xpos(x), ypox(y)
+	{}
+	void ShowPosition() const
+	{
+		cout << '[' << xpos << ", " << ypos << ']' << endl;
+	}
+	Point operator*(int times)
+	{
+		Point pos(xpos*times, ypos*times);
+		return pos;
+	}
+	friend Point operatpr*(int times, Point& ref);
+};
+
+Point operator*(int times, Point& ref) // 둘 다 받은 후 객체의 operator*() 호출
+{
+	return (ref * times)
+}
+
+int main()
+{
+	Point pos(1, 2);
+	Point cpy;
+	
+	cpy = pos * 3;
+	cpy.ShowPosition();
+	
+	cpy = pos * 3 * 2;
+	cpy.ShowPosition();
+	
+	return 0;
+}
+```
+
+---
+
+## cout, cin 그리고 endl
+
+다음의 cout 과 endl 를 간단하게 묘사한 예제 코드를 통해서 둘의 실체를 이해해보자
+
+```c++
+class ostream
+{
+public:
+	void operator<<(char *str)
+	{
+		prinf("%s", str);
+	}
+	
+	void operator<<(char chr)
+	{
+		printf("%c", chr);
+	}
+	
+	void operator<<(int num)
+	{
+		printf("%d", num);
+	}
+	
+	void operator<<(ostream& (*fp)(ostream &ostm))
+	{
+		fp(*this);
+	}
+};
+
+ostream& endl(ostream &ostm)
+{
+	ostm << '\n';
+	fflush(stdout);
+	
+	return ostm;
+}
+
+ostream cout;
+```
+
+```c++
+int main()
+{
+	using mystd::cout;
+	using mystd::endl;
+	
+	coug << "Simple String"; // == cout.operator<<("Simple String");
+	coug << endl; // == cout.operator<<(endl);
+	cout << 3.14; // == cout.operator<<(3.14);
+	cout << endl;
+	cout << 123; // == cout.operator<<(123);
+	endl(cout);
+	
+	return 0;
+}
+
+--------------------------------------------------------------
+Simple String
+3.14
+123
+```
+
+이 묘사 코드로 어떻게 cout 의 처리 매커니즘을 엿볼 수 있다.
+
+하지만 이 코드 역시 약간의 미완성으로 다음과 같은 예시 코드의 동작이 이뤄지지 못한다
+```c++
+cout << 123 << endl << 3.14 << endl;
+```
+위와 같은 연속적 출력문이 가능하려면, 위의 코드에서 __\*this__ 를 반환하도록 유도하면 된다
+
+```c++
+class ostream
+{
+public:
+	ostream& operator<<(char *str) // 객체의 참조 반환을 위해 반환 타입 수정
+	{
+		prinf("%s", str);
+		
+		return *this; // 객체 참조 반환
+	}
+	
+	void operator<<(char chr)
+	{
+		printf("%c", chr);
+		
+		return this*;
+	}
+	
+	void operator<<(int num)
+	{
+		printf("%d", num);
+		
+		return this*;
+	}
+	
+	void operator<<(ostream& (*fp)(ostream &ostm))
+	{
+		fp(*this);
+		
+		return this*;
+	}
+};
+
+ostream& endl(ostream &ostm)
+{
+	ostm << '\n';
+	fflush(stdout);
+	
+	return ostm;
+}
+
+ostream cout;
+```
+
+참조를 반환함으로써 cout 을 연속적으로 호출 가능하게 할 수 있다.
+
+---
+
+## <<, >> 연산자 오버로딩
+
+```c++
+class Point
+{
+private:
+	int xpos, ypos;
+public:
+	Point(int x=0, int y=0) : xpos(x), ypos(y)
+	{}
+	void ShowPosition() const
+	{
+		cout << '[' << xpos << ", " << ypos << ']' << endl;
+	}
+	friend ostream& operator<<(ostream& os, cosnt Point& pos);
+};
+
+ostream& operator<<(ostream& os, Point& pos)
+{
+	os << '[' << pos.xpos << ", " << pos.ypos << ']' << endl;
+	
+	return os;
+}
+```
+
+```c++
+int main()
+{
+	Point pos1(1, 3);
+	cout << pos1;
+	
+	Point pos2(101, 303);
+	cout << pos2;
+	
+	return 0;
+}
+
+----------------------------------------------------------------------------
+[1, 3]
+[101, 303]
+```
+
+이 코드 구성 방식을 통해 __Point 클래스를 대상으로 하는 <<연산자 오버로딩__ 사례를 볼 수 있다.

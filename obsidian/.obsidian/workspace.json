@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "U-KNOU/Discrete Mathematics/이산수학(Discrete mathematics) 2강.md",
+                "file": "U-KNOU/Discrete Mathematics/이산수학(Discrete Mathematics) 1강.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "이산수학(Discrete mathematics) 2강"
+              "title": "이산수학(Discrete Mathematics) 1강"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "U-KNOU/Discrete Mathematics/이산수학(Discrete Mathematics) 1강.md",
+                "file": "U-KNOU/Discrete Mathematics/이산수학(Discrete mathematics) 2강.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "이산수학(Discrete Mathematics) 1강"
+              "title": "이산수학(Discrete mathematics) 2강"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,22 +198,22 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "efcd26a017b44206",
+  "active": "c5833be621655f98",
   "lastOpenFiles": [
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 181444.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 180308.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 175047.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 174634.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 174206.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 173454.png",
+    "U-KNOU/Operating System",
     "U-KNOU/Discrete Mathematics/이산수학(Discrete Mathematics) 1강.md",
     "U-KNOU/Discrete Mathematics/이산수학(Discrete mathematics) 2강.md",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 183304.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 183045.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 182228.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 182158.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 181358.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 181320.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 181204.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 180752.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 170001.png",
+    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-08 165945.png",
     "U-KNOU/Discrete Mathematics/이산수학(Discrete Mathematics) 0강.md",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 172008.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 170349.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 170216.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 170123.png",
-    "U-KNOU/Discrete Mathematics/img/스크린샷 2026-03-06 165912.png",
     "열혈프로그래밍 C++/윤성우의 열혈 C++ chpt.15.md",
     "CashCowProject/Task/Multi-modal/Phi-4-multimodal-instruct/Phi-4-multimodal.md",
     "CashCowProject/회의록/업무 분배 정리 2025-09-16.md",
